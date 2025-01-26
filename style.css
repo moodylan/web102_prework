@@ -21,8 +21,6 @@ body {
 
 .stats-container {
     display: flex;
-    background-color: black;
-    display: flex;
     align-items: center;
 }
 
