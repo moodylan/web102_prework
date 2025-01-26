@@ -67,28 +67,29 @@ const contributionsCard = document.getElementById("num-contributions");
 
 // use reduce() to count the number of total contributions by summing the backers
 const totalContributions = GAMES_JSON.reduce((acc, game) => {
-    return acc + game.backers;
+  return acc + game.backers;
 }, 0);
 
 // set the inner HTML using a template literal and toLocaleString to get a number with commas
 contributionsCard.innerHTML = `
-    <p>${totalContributions.toLocaleString('en-US')}</p>
+    <p>${totalContributions.toLocaleString("en-US")}</p>
 `;
 
 // grab the amount raised card, then use reduce() to find the total amount raised
 const raisedCard = document.getElementById("total-raised");
 
 const totalRaised = GAMES_JSON.reduce((acc, game) => {
-    return acc + game.pledged;
+  return acc + game.pledged;
 }, 0);
 
 // set inner HTML using template literal
 raisedCard.innerHTML = `
-    <p>$${totalRaised.toLocaleString('en-US')}</p>
+    <p>$${totalRaised.toLocaleString("en-US")}</p>
 `;
 
 // grab number of games card and set its inner HTML
 const gamesCard = document.getElementById("num-games");
+
 const totalGames = GAMES_JSON.length;
 gamesCard.innerHTML = `
     <p>${totalGames}</p>
@@ -152,10 +153,24 @@ allBtn.addEventListener("click", showAllGames);
 const descriptionContainer = document.getElementById("description-container");
 
 // use filter or reduce to count the number of unfunded games
+// using reduce
+const totalUnfundedGames = GAMES_JSON.reduce(
+  (acc, game) => (game.pledged < game.goal ? acc + 1 : acc),
+  0
+);
+// using filter
+// const unfundedList = GAMES_JSON.filter((game) => game.pledged < game.goal);
+// const totalUnfundedGames = unfundedList.length;
 
 // create a string that explains the number of unfunded games using the ternary operator
+const templateStr = `A total of $${totalRaised.toLocaleString()} has been raised for ${totalGames} games. Currently, ${totalUnfundedGames} ${
+  totalUnfundedGames === 1 ? "game remains" : "games remain"
+} unfunded. We need your help to fund these amazing games!`;
 
 // create a new DOM element containing the template string and append it to the description container
+const element = document.createElement("p");
+element.innerHTML = templateStr;
+descriptionContainer.appendChild(element);
 
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
