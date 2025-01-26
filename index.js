@@ -168,9 +168,9 @@ const templateStr = `A total of $${totalRaised.toLocaleString()} has been raised
 } unfunded. We need your help to fund these amazing games!`;
 
 // create a new DOM element containing the template string and append it to the description container
-const element = document.createElement("p");
-element.innerHTML = templateStr;
-descriptionContainer.appendChild(element);
+const companyInfo = document.createElement("p");
+companyInfo.innerHTML = templateStr;
+descriptionContainer.appendChild(companyInfo);
 
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
@@ -185,7 +185,14 @@ const sortedGames = GAMES_JSON.sort((item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+let [firstGame, secondGame, ...rest] = sortedGames;
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const topFundedGame = document.createElement("p");
+topFundedGame.innerHTML = `${firstGame.name}`;
+firstGameContainer.appendChild(topFundedGame);
 
 // do the same for the runner up item
+const runnerUp = document.createElement("p");
+runnerUp.innerHTML = `${secondGame.name}`;
+secondGameContainer.appendChild(runnerUp);
