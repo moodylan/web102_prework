@@ -3,6 +3,7 @@
 body {
     font-family: "Merriweather Sans", serif;
     background-color: #b9c0c4;
+    color: #000000;
     text-align: center;
 }
 
@@ -11,7 +12,7 @@ body {
 }
 
 .company-name {
-    color: white;
+    color: #FFFFFF;
     padding-left: 10px
 }
 
@@ -30,7 +31,7 @@ body {
 }
 
 .main-page {
-    padding: 10px 20px;
+    padding: 10px 20px 50px 20px;
 }
 
 .welcome-container {
@@ -65,6 +66,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 60px;
 }
 
 #games-section {
@@ -99,7 +101,7 @@ body {
     text-align: center;
 }
 
-button, a {
+button {
     border: none;
     padding: 1%;
     width: 20%;
@@ -120,8 +122,14 @@ a {
     text-decoration: none;
     text-align: right;
     font-size: 20px;
+    color: #FFFFFF;
+    padding: 5px;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.top-redirect {
+    color: #000000;
 }
