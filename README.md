@@ -27,6 +27,7 @@ The following **optional** features are implemented:
 Here's a walkthrough of implemented features:
 
 <img src='https://github.com/moodylan/web102_prework/blob/main/sea-monsters-video-walkthrough.gif' title='Video Walkthrough' alt='Video Walkthrough' />
+alternative link: https://imgur.com/sm1yivk
 
 GIF created with Kap  
 
