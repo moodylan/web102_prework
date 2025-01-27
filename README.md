@@ -17,31 +17,26 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [x] List anything else that you can get done to improve the app functionality!
 * [x] Styling enhancements: Improved the design of the website with custom CSS for a modern and clean look.
-* [x] Added hover effects for buttons and game cards.
-* [x] Added anchor elements to redirect the user to the 'Our Games' section and the top of the page.
-* [x] Added a favicon, a title, and other minor adjustments while preserving page responsiveness.
+* [x] Added hover effects for buttons, stats, and game cards.
+* [x] Implemented anchor elements to redirect the user to the 'Our Games' section and the top of the page.
+* [x] Included a favicon, a title, and made other minor adjustments while preserving responsiveness.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/moodylan/web102_prework/blob/main/sea-monsters-video-walkthrough.gif' title='Video Walkthrough' alt='Video Walkthrough' />
 
 GIF created with Kap  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+One challenge I encountered was understanding the filter and reduce methods, and using them to process the game data efficiently. Debugging issues with DOM updates was another learning opportunity that strengthened my understanding of JavaScript.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2025 Dylan Moo Hernandez
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
