@@ -1,4 +1,4 @@
-# WEB102 Prework - *Sea Monsterse*
+# WEB102 Prework - *Sea Monsters*
 
 Submitted by: **Dylan Moo Hernandez**
 
@@ -18,10 +18,10 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 * [x] List anything else that you can get done to improve the app functionality!
-- Styling enhancements: Improved the design of the website with custom CSS for a modern and clean look.
-- Added hover effects for buttons and game cards.
-- Added anchor elements to redirect the user to the 'Our Games' section and the top of the page.
-- Added a favicon, a title, and other minor adjustments while preserving page responsiveness.
+* [x] Styling enhancements: Improved the design of the website with custom CSS for a modern and clean look.
+* [x] Added hover effects for buttons and game cards.
+* [x] Added anchor elements to redirect the user to the 'Our Games' section and the top of the page.
+* [x] Added a favicon, a title, and other minor adjustments while preserving page responsiveness.
 
 ## Video Walkthrough
 
